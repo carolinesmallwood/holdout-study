@@ -1,4 +1,4 @@
-In this project, I demonstrate proificiencies in **pandas**, **matplotlib**, and **scipy.stats**.
+Skills Utilized: **pandas**, **matplotlib**, and **scipy.stats**.
 
 The main notebook, HoldoutStudy.ipynb contains analysis of the holdout_data.csv dataset. This dataset contains 889k records of user tracking.
 Users were split into treatment and control groups where the treatment group viewed an ad.
