@@ -8,10 +8,10 @@ SELECT DISTINCT
     , cohort
     , LOWER(device) AS device
     , gender
-    , "group" AS treatment
+    , t.group AS treatment
     , sessionid AS session_id
     , userhash AS user_hash
-    , "value" AS conversion_amt
+    , t.value AS conversion_amt
     , verticalname AS vertical
-FROM holdout_data.holdout_data
+FROM holdout_data.holdout_data t
 WHERE cohort != 203902
