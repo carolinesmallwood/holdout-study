@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: deduped
+  - name: fact_sessions
     columns:
       - name: gender
         tests:

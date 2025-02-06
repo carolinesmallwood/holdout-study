@@ -8,10 +8,9 @@ SELECT DISTINCT
     , cohort
     , LOWER(device) AS device
     , gender
-    , t.group AS treatment
+    , t. group AS treatment
     , sessionid AS session_id
     , userhash AS user_hash
     , t.value AS conversion_amt
     , verticalname AS vertical
-FROM holdout_data.holdout_data t
-WHERE cohort != 203902
+FROM  {{ source('holdout_data', 'sessions') }} t

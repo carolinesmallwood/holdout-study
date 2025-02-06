@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: holdout_data
+    database: holdout-study-448206
+    tables:
+      - name: sessions
+        loaded_at_field: campaigntimestamp
+        freshness:
+          warn_after: {count: 1, period: hour}
