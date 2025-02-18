@@ -1,4 +1,4 @@
-Skills Utilized: **pandas**, **matplotlib**, and **scipy.stats**.
+Project Stack: **BigQuery, dbt, JupyterLab, pandas, scipy.stats, matplotlib, Tableau**
 
 The main notebook, HoldoutStudy.ipynb contains analysis of the holdout_data.csv dataset. This dataset contains 889k records of user tracking.
 Users were split into treatment and control groups where the treatment group viewed an ad.
