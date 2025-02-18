@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  # staging
+
+  - name: fact_sessions
+    config:
+      materialized: table
+
+    columns:
+      - name: gender
+        tests:
+          - accepted_values:
+              name: fact_sessions_gender_accepted_values
+              values: [f, m, NULL]
+      - name: cohort
+        tests:
+          - accepted_values:
+              name: fact_sesssions_cohort_accepted_values
+              values: [202002, 202003, 202004, 202005, 202006]
+              quote: false
+      - name: vertical
+        tests:
+          - accepted_values:
+              name: fact_sessions_vertical_accepted_values
+              values:
+                [
+                  Finance,
+                  Food and Beverage,
+                  Loyalty and Samples,
+                  Media and Entertainment,
+                  Retail,
+                  Sports and Fitness,
+                  Ticketing,
+                  Travel,
+                ]
